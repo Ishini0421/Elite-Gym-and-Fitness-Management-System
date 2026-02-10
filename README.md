@@ -1,166 +1,103 @@
+<div align="center">
 
+# ELITE Gym & Fitness Management
 
-ELITE Gym & Fitness Management System
+![Next.js](https://img.shields.io/badge/Next.js-15-black?style=for-the-badge&logo=next.js)
+![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white)
+![Convex](https://img.shields.io/badge/Convex-FF6F00?style=for-the-badge)
+![Stripe](https://img.shields.io/badge/Stripe-Payments-6772E5?style=for-the-badge&logo=stripe&logoColor=white)
+![Clerk](https://img.shields.io/badge/Clerk-Auth-6C47FF?style=for-the-badge)
+![Vapi](https://img.shields.io/badge/Vapi-Voice_AI-00D9FF?style=for-the-badge)
 
-Full-Stack AI-Powered Fitness Platform for Sri Lanka
+**🇱🇰 AI-Driven Digital Gym Platform for Sri Lanka**
 
-Manage memberships, trainers, bookings, workouts, diet plans, and e-commerce seamlessly with AI-driven personalization.
+[![Live Demo](https://img.shields.io/badge/🌐_Live_Demo-Vercel-black?style=for-the-badge)](https://elite-gym-and-fitness.vercel.app)
 
-🚀 Live Demo
+[Overview](#overview) • [Features](#features) • [Tech Stack](#tech-stack) • [Installation](#installation) • [Usage](#usage) • [Contributing](#contributing)
 
-View the platform
+</div>
 
-📝 Project Overview
+---
 
-ELITE Gym & Fitness is a modern, end-to-end fitness management system designed for gym owners, trainers, and members.
-The platform leverages AI, real-time data, and interactive web technologies to provide a complete solution for digital gym operations and personalized fitness experiences.
+## Overview
 
-Key highlights:
+**ELITE Gym & Fitness Management** is a full-stack platform designed to **modernize gym operations** and provide **personalized fitness experiences**. From membership management and AI-driven workout plans to trainer scheduling and e-commerce, ELITE covers everything a modern fitness business needs.
 
-AI-generated workout and diet plans
+Built with **Next.js 15**, **Convex**, **Stripe**, **Clerk**, and **Vapi AI**, this system is tailored for **gym owners, trainers, and members** in Sri Lanka, offering seamless AI-powered solutions for workouts, diet plans, bookings, and payments.
 
-Real-time voice consultations
+---
 
-Trainer scheduling and session management
+## Features
 
-Membership subscription and payments
+### **AI Fitness Experience**
+- Conversational voice interaction with **Vapi AI**  
+- Personalized workout and diet plans via **Google Gemini AI**  
+- Real-time transcript display during voice consultation  
+- Auto-generated plans synced to member profiles  
 
-E-commerce for gym products
+### **Membership & Subscription Management**
+- Flexible tiers: Basic, Premium, Elite  
+- Stripe-powered recurring billing  
+- Member dashboards with progress tracking  
+- QR code check-ins (coming soon)  
 
-Role-based dashboards for users, trainers, and admins
+### **Trainer Management**
+- Apply and create detailed trainer profiles  
+- Real-time session booking and schedule tracking  
+- Admin-controlled approvals and salary management  
 
-🔑 Features
-AI Fitness Program
+### **Marketplace**
+- Browse and purchase gym products (equipment, supplements, apparel)  
+- Secure Stripe checkout  
+- Admin inventory management and order history  
+- User reviews and ratings  
 
-Personalized workout and diet plans powered by Google Gemini AI
+### **Security & Authentication**
+- Clerk-powered authentication with social login  
+- Role-based access control: Users, Trainers, Admins  
+- Protected routes and secure session handling  
 
-Conversational voice input via Vapi AI
+### **Admin Tools**
+- Full user and membership management  
+- Analytics dashboards for subscriptions and revenue  
+- Blog & recipe content management  
+- System configuration and platform settings  
 
-Real-time transcripts and instant plan generation
+### **Mobile-Optimized UI**
+- Responsive, touch-friendly design  
+- Light/Dark theme toggle with **next-themes**  
+- Fast load times with **Turbopack**  
+- Modern UI components via **shadcn/ui**
 
-Membership Management
+---
 
-Multiple membership tiers (Basic, Premium, Elite)
+## Tech Stack
 
-Automated recurring payments through Stripe
+| Layer | Technology | Purpose |
+|-------|------------|---------|
+| Frontend | Next.js 15 + React 19 + TypeScript | Modern, fast, component-based web UI |
+| Styling | TailwindCSS + shadcn/ui | Utility-first responsive design |
+| Backend | Convex | Real-time backend and database |
+| Auth | Clerk | User authentication & role management |
+| Payments | Stripe | Membership, bookings, and marketplace |
+| AI & Voice | Vapi Voice AI + Google Gemini AI | Conversational fitness plans |
+| Deployment | Vercel + Edge Functions | Scalable hosting and low-latency routing |
 
-Dashboard to track attendance, subscriptions, and user progress
+---
 
-Trainer System
+## Installation
 
-Apply and manage trainer profiles
+**Prerequisites**
+- Node.js 18+
+- npm / yarn / pnpm
+- Convex, Stripe, Clerk, Google Gemini, Vapi accounts
 
-Book training sessions and track earnings
-
-Admin approval and salary management
-
-E-Commerce Marketplace
-
-Product catalog with cart functionality
-
-Stripe-powered checkout and order history
-
-Inventory and stock management for admins
-
-Security & Authentication
-
-Role-based access control for users, trainers, and admins
-
-Clerk-powered authentication with social login
-
-Protected routes and secure session handling
-
-🛠️ Tech Stack
-Layer	Technology
-Frontend	Next.js 15, TypeScript, React, TailwindCSS, shadcn/ui, next-themes
-Backend	Convex (queries, mutations, actions)
-Authentication	Clerk
-Payments	Stripe Checkout & Webhooks
-AI & Voice	Vapi Voice AI, Google Gemini AI
-Deployment	Vercel, Edge Functions
-📁 Project Structure
-ELITE-Gym-and-Fitness/
-│
-├── convex/                  # Backend: queries, mutations, http routes
-├── src/
-│   ├── app/                 # Next.js 15 App Router
-│   ├── components/          # Reusable UI components
-│   ├── lib/                 # Helper functions
-│   ├── providers/           # Context providers
-│   └── middleware.ts        # Auth middleware
-├── public/                  # Static assets
-├── .env.local               # Environment variables
-├── package.json
-└── tsconfig.json
-
-⚡ Installation & Setup
-Prerequisites
-
-Node.js 18.x+
-
-npm, yarn, or pnpm
-
-Git
-
-Convex, Stripe, Clerk, Google Gemini, and Vapi accounts
-
-Steps
-# Clone the repository
+**Setup**
+```bash
 git clone https://github.com/Ishini0421/Elite-Gym-and-Fitness-Management-System.git
 cd Elite-Gym-and-Fitness-Management-System
 
-# Install dependencies
-npm install  # or yarn install / pnpm install
+npm install
+# or yarn / pnpm install
 
-# Setup environment variables
-# Create a `.env.local` file and add keys for Convex, Clerk, Stripe, Gemini, and Vapi
-
-# Start development server
-npm run dev  # or yarn dev / pnpm dev
-
-
-Access the platform: http://localhost:3000
-
-📊 Features in Action
-
-Sign Up & Profile Setup: Create an account, choose membership, generate AI fitness plans.
-
-AI Voice Consultation: Engage with Vapi AI to create personalized plans.
-
-Trainer Booking: Schedule and manage sessions with real-time availability.
-
-E-Commerce Marketplace: Shop for gym products, checkout via Stripe, track orders.
-
-Admin Dashboard: Manage users, trainers, inventory, blog, recipes, and payments.
-
-🏗️ Future Improvements
-
-Mobile apps (iOS & Android)
-
-Video workout library
-
-Gamification and progress tracking
-
-Multi-language support (Sinhala, Tamil)
-
-Multi-location gym management
-
-💻 Contributing
-
-Contributions welcome!
-
-Steps:
-
-Fork the repo
-
-Create a feature branch: git checkout -b feature/YourFeature
-
-Commit changes: git commit -m "Add YourFeature"
-
-Push: git push origin feature/YourFeature
-
-Open a Pull Request
-
-📄 License
-
-This project is licensed under the MIT License.
+# Create .env.local and add your keys
